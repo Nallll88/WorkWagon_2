@@ -1,0 +1,313 @@
+
+/* - Sonal Chhen CSS */
+
+* {
+  font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+body {
+  background-color: #ebf4f5;
+  
+}
+
+
+
+.jobs-container,
+.titlejob,
+footer,
+.emailink {
+  background-color: #ebf4f5;
+}
+
+footer {
+  color: black;
+}
+
+.emailink {
+  color: black;
+}
+
+.ten h2 {
+  font-size: 34px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Hero Sections - sonal */
+.jobhero, .indexhero {
+  width: 100%;
+  overflow: hidden;
+}
+
+.jobhero {
+  height: 350px;
+}
+
+.indexhero {
+  height: 375px;
+}
+
+
+.jobhero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; 
+  object-position: center 30%;/* try 'center 30%' or 'center 20%' if needed */
+}
+
+
+
+
+.indexhero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+}
+
+/* Grid Layout - sonal */
+.content_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "welcome welcome"
+    "company_intro picture1"
+    "company_details picture2"
+    "company_roadmap picture3";
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+
+
+/* Welcome Section -  PHANUNT NEANG*/
+.welcome {
+  grid-area: welcome;
+  color: #EBF4F5;
+  background: #ebf4f5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 0;
+  margin-bottom: 10px;
+  border: 1px solid #ebf4f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.welcome2 {
+  grid-area: welcome;
+  color: #EBF4F5;
+  background: #ebf4f5;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 0 0;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 1px solid #ebf4f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondMainText {
+  font-size: 32px;
+  line-height: 1.2;
+  animation: rainbow 2s linear infinite;
+  background: linear-gradient(90deg, #ffeb3b, #00e676, #40c4ff, #7c4dff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+}
+
+.thirdMainText {
+  animation: rainbow 5s linear infinite;
+  background: linear-gradient(90deg, #ffeb3b, #00e676, #40c4ff, #7c4dff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200%;
+  font-size: 20px;
+}
+
+
+
+@keyframes rainbow {
+  0% { background-position: 0%; }
+  100% { background-position: 100%; }
+}
+
+/* Shared Box Styling - sonal*/
+
+.company_intro{
+  grid-area: company_intro;
+  background-color: #b5c6e0;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.4;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: left;
+  height: 60%;
+
+}
+
+
+.company_details {
+  grid-area: company_details;
+  background-color: #b5c6e0;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.4;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: left;
+  height: 60%;
+}
+
+
+
+
+.company_roadmap {
+  grid-area: company_roadmap;
+  background-color: #b5c6e0;
+  padding: 20px;
+  margin: 10px;
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1.4;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: left;
+  height: 60%;
+}
+
+
+.company_intro { grid-area: company_intro; }
+.company_details { grid-area: company_details; }
+.company_roadmap { grid-area: company_roadmap; }
+
+.company_intro > h2,
+.company_details > h2,
+.company_roadmap > h2 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+
+/* List Styling */
+.company_details ul,
+.company_roadmap ul {
+  list-style-type: disc;
+  list-style-position: inside;
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Image Sections - sonal */
+.picture1, .picture2, .picture3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: #ebf4f5;
+  padding: 20px;
+}
+
+.picture1 { grid-area: picture1; }
+.picture2 { grid-area: picture2; }
+.picture3 { grid-area: picture3; }
+
+.picture1 img,
+.picture2 img,
+.picture3 img {
+  width: 500px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 20px;
+  border: 5px solid #b5c6e0;
+}
+
+/* Success Stories */
+.successStory {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mini_box {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mini_box1 {
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #b5c6e0;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 90%;
+  margin-left: 8%;
+}
+
+.mini_box1 > h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.mini_box1 > p {
+  padding: 5px;
+  width: 80%;
+  height: 150px;
+  text-align: center;
+  margin-left: 10%;
+  background-color: #ebf4f5;
+  line-height: 1.4;
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.mini_box1 > img {
+  display: block;
+  margin: 0 auto 10px auto;
+  width: 80%;
+  height: 250px;
+  border-radius: 30px;
+  border: 5px solid #ebf4f5;
+  transition: transform .2s;
+}
+
+.mini_box1 img:hover {
+  transform: scale(1.1);
+}
+
+
+.sucess {color: black;}
+

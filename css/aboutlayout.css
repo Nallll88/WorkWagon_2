@@ -1,0 +1,137 @@
+* {background-color: #ebf4f5;}
+
+
+* {font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;}
+
+
+body{ background-color: #ebf4f5;}
+
+/*about - SOMSANIT VONGPHOUTHONE*/
+
+
+#heads {margin-bottom:10px ;}
+#h {margin-top: 5px;}
+
+
+/* about css page*/
+#head {font-size: 48px;
+    margin-top: 5px;
+}
+#head {text-align: center;}
+#heads {text-align: center;}
+#headss {text-align: center;}
+#h {text-align: center;}
+
+/* information css borader*/
+.card {
+    color: black;
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    background: #b5c6e0;
+    border-radius: 10px;
+  }
+  
+  .card dt {
+    margin: 5px 0;
+    font-size: 1.1em;
+    background-color: #b5c6e0;
+    color: inherit; /* <-- text color inside the box */
+  }
+  
+  .card dt strong {
+    background-color: #b5c6e0;
+    color: #24252a; /* make the bold label part darker for contrast */
+  }
+  
+
+figure {display: flex;
+    align-items: center;
+    justify-content: center;}
+
+
+
+/* timetable - SOMSANIT VONGPHOUTHONE*/
+    #tb {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    #tb th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #24252a;
+    }
+    #tb tr:nth-child(even) {
+        background-color: #FAFDF3;
+    }
+    #tb th {
+        background-color: #24252a;
+        color: #FAFDF3;
+    }
+
+/*email button - SOMSANIT VONGPHOUTHONE */
+.btn {text-align: center; }
+
+.btn button {font-size: 15px;}
+      
+.button {display: inline-block;
+        text-decoration: none;
+        color: #FAFDF3;
+        }
+           
+.btn button {font-size: 17px;
+padding:8px 10px;
+background-color: #24252a;
+margin-top: 5px;
+border-radius: 5px;
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0 12px 24px rgb(0, 0, 0, 0.15);
+transform: translateY(-2px);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn button:hover{transform: translateY(-6px) scale(1.05);}
+
+
+/*Meet our team backdorp*/
+
+#headss {background-color: #24252a; 
+        color:#FAFDF3;
+        text-align: center; 
+        width: auto; 
+        height: 50px; 
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+
+
+
+
+.bg {background-color: transparent;
+  color: black;
+}
+
+.fieldchange {
+  margin-left: 0;
+  
+
+}
+
+
+
+.abouthero {
+    width: 100%;
+    height: 300px; 
+    overflow: hidden;
+  }
+  
+.abouthero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+  }
+

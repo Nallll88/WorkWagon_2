@@ -1,0 +1,276 @@
+[33mcommit 319b2064f0f6f5c5326855a70403cc313b889fa5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mlayout[m[33m, [m[1;31morigin/layout[m[33m)[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Mon Apr 7 03:11:26 2025 +1000
+
+    style jobs color background
+
+[33mcommit 107196cd9dc53ebd6e32626678ec8d6bd1e4d656[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: c5db87e 3c41142
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Apr 2 12:42:38 2025 +1100
+
+    Merge pull request #16 from Nallll88/styleAbout
+    
+    change style color in about page
+
+[33mcommit 3c41142f68d93f6e25c9fbf1a64d9f7c8d9cde54[m[33m ([m[1;31morigin/styleAbout[m[33m)[m
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Apr 2 12:41:52 2025 +1100
+
+    change style color in about page
+
+[33mcommit c5db87e668bc78b8db8194a480b36a03d5623d84[m[33m ([m[1;31morigin/stylepage[m[33m, [m[1;31morigin/jobstyle[m[33m)[m
+Merge: 29cbb0c 5729459
+Author: Nal <anngkor88@gmail.com>
+Date:   Wed Mar 26 12:05:11 2025 +1100
+
+    Merge pull request #14 from Nallll88/rps-ui
+    
+    Added position 2
+
+[33mcommit 57294598dd4db11837a46913ddd93357d01ffb0d[m[33m ([m[1;31morigin/rps-ui[m[33m)[m
+Author: Nori69 <sotharophum69@gmail.com>
+Date:   Wed Mar 26 12:02:22 2025 +1100
+
+    Added position 3
+
+[33mcommit 29cbb0c80d862db9ca2fdc7a8629aaa5f0c803c5[m
+Merge: 86ee8cc 6eb4ba4
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:57:38 2025 +1100
+
+    Merge branch 'main' of https://github.com/Nallll88/WorkWagon
+
+[33mcommit 86ee8cc9f0133f2b0645d755ad3da16ab5aad886[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:57:22 2025 +1100
+
+    fix css style
+
+[33mcommit 6eb4ba4f6df9f08e46a88242c16f4007f5f7c890[m[33m ([m[1;31morigin/index[m[33m)[m
+Author: OptimusDYJ <d1956570067@gmail.com>
+Date:   Wed Mar 26 11:54:58 2025 +1100
+
+    index html
+    
+    add content to homepage
+
+[33mcommit dd269cd3344d90923a68fc3359d74be44ccc8711[m[33m ([m[1;31morigin/Position-3[m[33m)[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:39:27 2025 +1100
+
+    Update style.css
+
+[33mcommit 4453ab1bcbd14f44acca01aa86cc25df1283695a[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:37:01 2025 +1100
+
+    fix style< merge apply to main
+
+[33mcommit c178203ebbb7f9dea00dff8cd3d96bef05ded8e7[m
+Merge: fb5cfe7 b963f89
+Author: Nal <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:35:13 2025 +1100
+
+    Merge pull request #11 from Nallll88/applyjob
+    
+    Basic styling of form
+
+[33mcommit b963f89fc4fe1bef7cb9af9fba8518ccd39832ad[m
+Merge: adc57fa fb5cfe7
+Author: Nal <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:35:03 2025 +1100
+
+    Merge branch 'main' into applyjob
+
+[33mcommit fb5cfe7b1d5b2ffaff78ae3c6bc2b898d9ea1d69[m
+Merge: 98d7c09 0245022
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Mar 26 11:32:18 2025 +1100
+
+    Merge pull request #12 from Nallll88/about
+    
+    html and css
+
+[33mcommit adc57fa7794882da5e5d6c4295624cfb18845788[m
+Merge: 2f17f89 98d7c09
+Author: Nal <anngkor88@gmail.com>
+Date:   Wed Mar 26 11:32:15 2025 +1100
+
+    Merge branch 'main' into applyjob
+
+[33mcommit 0245022958bcce12435613c5a8f8e4fc576a4680[m
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Mar 26 11:30:51 2025 +1100
+
+    html and css
+    
+    witing only put pics and then will check it again
+
+[33mcommit 2f17f89f8d8f30842f7443dbef54a374358c9e0a[m
+Author: Ricketrice <phanuntneang77@gmail.com>
+Date:   Wed Mar 26 11:24:13 2025 +1100
+
+    Basic styling of form
+
+[33mcommit 98d7c093b2c6a3a15bf8745641b7815a2e6b0d6a[m[33m ([m[1;31morigin/index_jerry[m[33m)[m
+Merge: edc1450 f609aef
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Mar 26 11:04:33 2025 +1100
+
+    Merge pull request #10 from Nallll88/about
+    
+    About test
+
+[33mcommit f609aef573f6ca56b6820280baf7ca6d39279f35[m
+Merge: 3d80bbd edc1450
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Mar 26 11:03:35 2025 +1100
+
+    Merge branch 'about' of https://github.com/Nallll88/WorkWagon into about
+
+[33mcommit 3d80bbd51aa99afb3b51738311006a4946aabb4f[m
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Wed Mar 26 11:01:25 2025 +1100
+
+    test
+
+[33mcommit edc14505f1080740a53436f53949e1f017b2aad0[m
+Merge: 128edd1 9cf043c
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Wed Mar 26 10:58:46 2025 +1100
+
+    Merge branch 'main' into about
+
+[33mcommit 9cf043cd8942879fa99b30b479a4ed23d7b1ac10[m[33m ([m[1;31morigin/about-style[m[33m)[m
+Author: Nal <anngkor88@gmail.com>
+Date:   Tue Mar 25 23:47:37 2025 +1100
+
+    Update README.md
+
+[33mcommit 36f11fed060a5d6624a0c39fb1c1569e3801018f[m
+Author: Nal <anngkor88@gmail.com>
+Date:   Mon Mar 24 11:15:05 2025 +1100
+
+    Create README.md
+    
+    Simple Description
+
+[33mcommit 9ec2a08ced9ec7248fb60f0beff8e3307388c08b[m
+Merge: b626718 4b25d9c
+Author: Nal <anngkor88@gmail.com>
+Date:   Mon Mar 24 11:11:50 2025 +1100
+
+    Merge pull request #9 from Nallll88/Position-3
+    
+    Position-3
+
+[33mcommit 4b25d9ccd36865602fca4b748fd4820baea060d1[m
+Author: Nori-69 <Sotharophum69@gmail.com>
+Date:   Mon Mar 24 00:27:46 2025 +1100
+
+    Add files via upload
+
+[33mcommit b6267189b5d2b4eb70ca5ccdaab4580e9199866e[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Sun Mar 23 00:38:08 2025 +1100
+
+    fix
+
+[33mcommit f0f5d82f19e5b0d1e759d3f59d81555df44318b9[m
+Merge: 8dd7bff 88a6fac
+Author: Nal <anngkor88@gmail.com>
+Date:   Fri Mar 21 23:45:36 2025 +1100
+
+    Merge pull request #8 from Nallll88/jobs
+    
+    style jobs and done content for jobs page
+
+[33mcommit 88a6fac8f2d92101a736aa6e2e8ec04393db13e5[m[33m ([m[1;31morigin/jobs[m[33m)[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 23:45:02 2025 +1100
+
+    style jobs and done content for jobs page
+    
+    style jobs page and fill the content for jobs page
+
+[33mcommit 8dd7bff70219d221b3b66bacc0380eb169b50f8a[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 18:31:43 2025 +1100
+
+    Update apply.html
+
+[33mcommit cc70fe6cb0f3a5939a6cd5b9dfa89837118b6d8e[m[33m ([m[1;31morigin/fix-apply-style[m[33m)[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 18:26:43 2025 +1100
+
+    Update jobs.html
+
+[33mcommit 91ad14d69ddec0c8067d94aec59c475fd634d37a[m
+Merge: a42ee76 5e24024
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 18:10:37 2025 +1100
+
+    Merge branch 'fix-apply-style' of https://github.com/Nallll88/WorkWagon into fix-apply-style
+
+[33mcommit a42ee7676c6ecd977e69d6abd9a157eacd9f6f40[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 18:10:21 2025 +1100
+
+    fix css value and nav
+
+[33mcommit 5e2402453057eb66238044c6ed73605f326a0f6a[m
+Merge: aaee591 f7ac914
+Author: Nal <anngkor88@gmail.com>
+Date:   Fri Mar 21 17:55:52 2025 +1100
+
+    Merge branch 'main' into fix-apply-style
+
+[33mcommit aaee591be129566d1571837f0b9ca0c8a5e3b3d3[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 17:52:58 2025 +1100
+
+    fix nav and css style
+
+[33mcommit 128edd13ae1cf8ded0ada8e045fc022f2fe30561[m
+Author: Moss879 <moss0mixy@gmail.com>
+Date:   Fri Mar 21 16:35:44 2025 +1100
+
+    I fixed abit in my html and finish my about css just only piics not finish yet
+
+[33mcommit f7ac9147ac5ded57323d207bf5955fc13656b7bc[m[33m ([m[1;31morigin/Job-decription[m[33m)[m
+Merge: f4a08c5 9f560da
+Author: Nal <anngkor88@gmail.com>
+Date:   Fri Mar 21 13:54:21 2025 +1100
+
+    Merge pull request #5 from Nallll88/applyjob
+    
+    fix apply style
+
+[33mcommit 9f560da11270fc0be797552562b3d629bf9ee277[m
+Merge: 3f17552 f4a08c5
+Author: Nal <anngkor88@gmail.com>
+Date:   Fri Mar 21 13:53:57 2025 +1100
+
+    Merge branch 'main' into applyjob
+
+[33mcommit 3f17552e74c78fc3990c9e655ca1823a245a46cb[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 13:52:34 2025 +1100
+
+    Update style.css
+
+[33mcommit 6af6ec9f93622c467fa29e3663baa9ef547687b8[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 13:51:06 2025 +1100
+
+    fix apply style
+
+[33mcommit f4a08c56fa97f91b0e9658099ee7e13d29118fc4[m
+Author: Nallll88 <anngkor88@gmail.com>
+Date:   Fri Mar 21 13:45:42 2025 +1100
+
+    change
+
+[33mcommit 9f8086b252bd3d6ad15c9db8688f0823ef1ddeb3[m
+Author: Nallll

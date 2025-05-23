@@ -1,0 +1,36 @@
+/* Keyframes for hero image fade-in - Sonal*/
+@keyframes heroFadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .indexhero img {
+    animation: heroFadeIn 1.5s ease-out forwards;
+  }
+  
+
+
+/*  SOMSANIT VONGPHOUTHONE*/
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+  @keyframes fade{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade{
+    opacity: 0;
+    animation: fade 0.8s ease forwards;
+}
