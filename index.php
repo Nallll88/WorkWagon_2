@@ -1,8 +1,9 @@
 
 <?php
 // index.php
-$page_title = 'Home';
-include 'header.inc';
+$page_title = "Home";
+include("header.inc");
+include("menu.inc");
 ?>
 
         <div class="indexhero">
@@ -92,7 +93,7 @@ include 'header.inc';
   </div>
   <!-- …rest of your index content… -->
 </div>
-<?php include 'footer.inc'; ?>
+<?php include ("footer.inc"); ?>
 
         
 
