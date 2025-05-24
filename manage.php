@@ -2,6 +2,7 @@
 // manage.php — HR manager interface for querying and updating EOIs
 $page_title = 'Manage EOIs';
 include 'header.inc';
+include 'menu.inc;'
 include 'settings.php';
 
 // Connect to database

@@ -1,7 +1,8 @@
 <?php
 // jobs.php
 $page_title = 'Jobs';
-include 'header.inc';
+include("header.inc");
+include("menu.inc");
 ?>
     <!-- Hero image, non‑semantic wrapper since no heading needed -->
     <div class="jobhero">
@@ -98,4 +99,4 @@ include 'header.inc';
       </section>
       
     </div>
-<?php include 'footer.inc'; ?>
+<?php include ("footer.inc"); ?>

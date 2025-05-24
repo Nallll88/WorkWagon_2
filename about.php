@@ -2,7 +2,8 @@
 <?php
 // about.php
 $page_title = 'About Us';
-include 'header.inc';
+include("header.inc");
+include("menu.inc");
 ?>
 
     <div class="fade">
@@ -111,7 +112,7 @@ include 'header.inc';
     
 </div>
 
-<?php include 'footer.inc'; ?>
+<?php include ("footer.inc"); ?>
 
 
 

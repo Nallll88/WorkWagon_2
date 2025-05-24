@@ -1,7 +1,8 @@
 <?php
   // apply.php — job application form page
   $page_title = 'Apply';
-  include 'header.inc';
+include("header.inc");
+include("menu.inc");
 ?>
 
 <main class="ContainerNum1">
@@ -106,4 +107,4 @@
   </div>
 </main>
 
-<?php include 'footer.inc'; ?>
+<?php include ("footer.inc"); ?>

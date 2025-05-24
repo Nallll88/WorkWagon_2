@@ -2,7 +2,8 @@
 <?php
 // enhancements.php
 $page_title = 'Enhancements';
-include 'header.inc';
+include("header.inc");
+include("menu.inc");
 ?>
 
     <div class ="enchancement#1">
@@ -73,6 +74,6 @@ transition: transform 0.3s ease;
       </p>
     </section>
     
-<?php include 'footer.inc'; ?>
+<?php include ("footer.inc"); ?>
 
 
