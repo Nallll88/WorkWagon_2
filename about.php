@@ -113,8 +113,5 @@ include("menu.inc");
 </div>
 
 <?php include ("footer.inc"); ?>
-
-
-
 </body>
 </html>
