@@ -40,6 +40,10 @@ CREATE TABLE IF NOT EXISTS eoi (
   OtherSkills      TEXT,
   Status           ENUM('New','Current','Final') DEFAULT 'New',
   created          TIMESTAMP        DEFAULT CURRENT_TIMESTAMP
+  enforce intergrity: EOI.JobReference musit exist in Job
+  FOREIGN KEY (JobReference) 
+  REFERENCES Job(JobRefNumber)
+  ON DELETE RESTRICT
 ) ENGINE=InnoDB;
 ";
 if (!$mysqli->query($createSQL)) {
