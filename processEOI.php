@@ -22,24 +22,24 @@ if ($mysqli->connect_errno) {
 // 3) Create EOI table if it doesn't exist
 $createSQL = "
 CREATE TABLE IF NOT EXISTS eoi (
-  EOInumber      INT AUTO_INCREMENT PRIMARY KEY,
-  job_ref        CHAR(5)          NOT NULL,
-  first_name     VARCHAR(20)      NOT NULL,
-  last_name      VARCHAR(20)      NOT NULL,
-  birth          DATE             NOT NULL,
-  gender         ENUM('male','female','other') NOT NULL,
-  street_address VARCHAR(40)      NOT NULL,
-  suburb         VARCHAR(40)      NOT NULL,
-  state          ENUM('VIC','NSW','QLD','NT','WA','SA','TAS','ACT') NOT NULL,
-  postcode       CHAR(4)          NOT NULL,
-  email          VARCHAR(255)     NOT NULL,
-  phone          VARCHAR(12)      NOT NULL,
-  skill1         TINYINT UNSIGNED DEFAULT 0,
-  skill2         TINYINT UNSIGNED DEFAULT 0,
-  skill3         TINYINT UNSIGNED DEFAULT 0,
-  other_skills   TEXT,
-  status         ENUM('New','Current','Final') DEFAULT 'New',
-  created        TIMESTAMP        DEFAULT CURRENT_TIMESTAMP
+  EOInumber        INT AUTO_INCREMENT PRIMARY KEY,
+  JobReference     CHAR(5)          NOT NULL,
+  FirstName        VARCHAR(20)      NOT NULL,
+  LastName         VARCHAR(20)      NOT NULL,
+  DateOfBirth      DATE             NOT NULL,
+  gender           ENUM('male','female','other') NOT NULL,
+  StreetAddress    VARCHAR(40)      NOT NULL,
+  Suburb           VARCHAR(40)      NOT NULL,
+  State            ENUM('VIC','NSW','QLD','NT','WA','SA','TAS','ACT') NOT NULL,
+  Postcode         CHAR(4)          NOT NULL,
+  Email            VARCHAR(255)     NOT NULL,
+  PhoneNumber      VARCHAR(12)      NOT NULL,
+  Skill1           TINYINT UNSIGNED DEFAULT 0,
+  Skill2           TINYINT UNSIGNED DEFAULT 0,
+  Skill3           TINYINT UNSIGNED DEFAULT 0,
+  OtherSkills      TEXT,
+  Status           ENUM('New','Current','Final') DEFAULT 'New',
+  created          TIMESTAMP        DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB;
 ";
 if (!$mysqli->query($createSQL)) {
@@ -52,10 +52,11 @@ function clean($data) {
 }
 
 // 5) Collect & clean POST data
+
 $job_ref      = clean($_POST['job_ref']);
 $first_name   = clean($_POST['first_name']);
 $last_name    = clean($_POST['last_name']);
-$birth_raw    = clean($_POST['birth']);
+
 $gender       = clean($_POST['gender']);
 $street       = clean($_POST['street_address']);
 $suburb       = clean($_POST['suburb']);
@@ -67,6 +68,8 @@ $skill1       = isset($_POST['skill1']) ? 1 : 0;
 $skill2       = isset($_POST['skill2']) ? 1 : 0;
 $skill3       = isset($_POST['skill3']) ? 1 : 0;
 $other_skills = clean($_POST['other_skills']);
+$birth_raw = clean($_POST['birth']);
+
 
 // 6) Validate and collect errors
 $errors = [];
@@ -122,14 +125,44 @@ if ($errors) {
     exit;
 }
 
+$check_job = $mysqli->prepare("SELECT JobRefNumber FROM job_description WHERE JobRefNumber = ?");
+$check_job->bind_param("s", $job_ref);
+$check_job->execute();
+$check_job->store_result();
+
+if ($check_job->num_rows === 0) {
+    include 'header.inc';
+    echo "<h1>Invalid Job Reference</h1>";
+    echo "<p>The job reference <strong>$job_ref</strong> does not exist.</p>";
+    echo "<p><a href='jobs.php'>Return to job listings</a></p>";
+    include 'footer.inc';
+    exit;
+}
+$check_job->close();
+
+$check_job = $mysqli->prepare("SELECT JobRefNumber FROM job_description WHERE JobRefNumber = ?");
+if (!$check_job) {
+    die("Prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
+}
+$check_job->bind_param("s", $job_ref);
+$check_job->execute();
+$check_job->store_result();
+if ($check_job->num_rows === 0) {
+    die("Invalid job reference: $job_ref doesn't exist in job_description.");
+}
+$check_job->close();
 // 8) Insert validated record
 $stmt = $mysqli->prepare(
     "INSERT INTO eoi
-     (job_ref, first_name, last_name, birth, gender,
-      street_address, suburb, state, postcode,
-      email, phone, skill1, skill2, skill3, other_skills)
+     (JobReference, FirstName, LastName, DateOfBirth, gender,
+      StreetAddress, Suburb, State, Postcode,
+      Email, PhoneNumber, Skill1, Skill2, Skill3, OtherSkills)
      VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
 );
+
+if (!$stmt) {
+    die("Insert prepare failed: (" . $mysqli->errno . ") " . $mysqli->error);
+}
 
 // Notice 11 's' types (for strings) and 3 'i' (for skill flags), total 14 placeholders + 1
 $stmt->bind_param(

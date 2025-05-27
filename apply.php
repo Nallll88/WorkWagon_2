@@ -1,8 +1,9 @@
 <?php
   // apply.php — job application form page
+  $jobRef = isset($_GET['jobref']) ? htmlspecialchars($_GET['jobref']) : '';
   $page_title = 'Apply';
-include("header.inc");
-include("menu.inc");
+  include("header.inc");
+  include("menu.inc");
 ?>
 
 <main class="ContainerNum1">
@@ -15,7 +16,7 @@ include("menu.inc");
         <label for="job_ref">Job reference number</label>
         <input
           type="text" name="job_ref" id="job_ref"
-          maxlength="5" minlength="5" pattern="[A-Za-z0-9]{5}"
+          maxlength="5" minlength="5" pattern="[A-Za-z0-9]{5}" value="<?php echo $jobRef; ?>"
           required
         >
 
@@ -107,4 +108,6 @@ include("menu.inc");
   </div>
 </main>
 
-<?php include ("footer.inc"); ?>
+<?php 
+include ("footer.inc");
+ ?>

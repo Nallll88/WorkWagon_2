@@ -418,5 +418,9 @@ figure {display: flex;
   margin-top: 30px;
 }
 
+.enchament1 {
+  background-color: gray;
+  color: white;
+  width: 15%;
 
-
+}

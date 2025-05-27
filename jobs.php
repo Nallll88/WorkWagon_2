@@ -3,6 +3,7 @@
 $page_title = 'Jobs';
 include("header.inc");
 include("menu.inc");
+include("styls.css");
 ?>
     <!-- Hero image, non‑semantic wrapper since no heading needed -->
     <div class="jobhero">
@@ -53,6 +54,7 @@ include("menu.inc");
             <li>Learn and develop systems administration and troubleshooting skills.</li>
           </ul>
         </aside>
+        <a class="enchament1" href="apply.php?jobref=J0002">Apply Now</a>
       </section>
   
       <!-- Position 2 -->
@@ -96,7 +98,28 @@ include("menu.inc");
             <li>Excellent communication, documentation, and troubleshooting abilities.</li>
           </ul>
         </aside>
+        <a class="enchament1" href="apply.php?jobref=J0001">Apply Now</a>
       </section>
       
     </div>
-<?php include ("footer.inc"); ?>
+<?php  
+  require_once("settings.php");
+
+  $conn = mysqli_connect($host, $user, $pwd, $sql_db);
+  $query = "SELECT * FROM job_description";
+  $result = mysqli_query($conn, $query);
+
+  if ($result && mysqli_num_rows($result) != 0) {
+    while ($row = mysqli_fetch_assoc($result)) {
+      echo "<section class='job'>";
+      echo "<h2>" . htmlspecialchars($row['JobTitle']) . " (" . htmlspecialchars($row['JobRefNumber']) . ")</h2>";
+      echo "<p><strong>Summary:</strong> " . htmlspecialchars($row['JobSummary']) . "</p>";
+      echo "<p><strong>Responsibilities:</strong> " . htmlspecialchars($row['KeyResponsibilities']) . "</p>"; 
+      echo "<p><strong>Skills Required:</strong> " . htmlspecialchars($row['RequiredSkills']) . "</p>";
+      echo "<a href='apply.php?jobref=" . urlencode($row['JobRefNumber']) . "'>Apply Now</a>";
+      echo "</section>";
+          }
+      }
+      mysqli_close($conn);
+  include ("footer.inc"); 
+?>
