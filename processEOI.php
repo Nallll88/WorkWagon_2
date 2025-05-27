@@ -1,4 +1,11 @@
 <?php
+require_once("settings.php");
+
+$mysqli = mysqli_connect($host, $user, $pwd, $sql_db);
+
+if (!$mysqli) {
+    die("Database connection failed: " . mysqli_connect_error());
+}
 // processEOI.php — handles submission, table creation, validation, insertion, confirmation
 
 // 1) Prevent direct access via GET
@@ -8,8 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 
 // 2) Include DB credentials and connect
-include 'settings.php';
-$mysqli = new mysqli($DB_HOST, $DB_USER, $DB_PASS, $DB_NAME);
 if ($mysqli->connect_errno) {
     die("Database connection failed: " . $mysqli->connect_error);
 }
