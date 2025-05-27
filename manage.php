@@ -11,6 +11,14 @@ if ($mysqli->connect_errno) {
     die("Database connection failed: " . $mysqli->connect_error);
 }
 
+// Task 3: sorting setup
+$allowed_sorted = ['EOInumber', 'JobReference', 'firstname', 'Lastname', 'DateofBirth', 'gender', 
+'Status', 'created'];
+$sorted_filed = 'EOInumber';
+if (isset($_GET['sort']) && in_array($GET_['sot'], $allowed_sorted)) {
+  $sort_filed = $_GET['sort'];
+}
+
 $message = '';
 
 // Handle deletion by job reference
