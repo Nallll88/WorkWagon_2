@@ -73,6 +73,52 @@ transition: transform 0.3s ease;
         </a>
       </p>
     </section>
+    <!--Enchancement 4-->
+    <section class="enhancement">
+      <p>Implemented design in the job.php page to insert new available jobs in the page dynamically without hardcoding it.</p>
+      <h2>Created a table to insert jobs dynamically to job.php</h2>
+      <p>
+          CREATE TABLE job_description (
+            JobRefNumber CHAR(5) PRIMARY KEY,
+            JobTitle VARCHAR(100),
+            JobSummary TEXT,
+            KeyResponsibilities TEXT,
+            RequiredSkills TEXT
+          );
+      </p>  
+      <h2>Command to insert available jobs to the job_description table</h2>       
+      <p>
+        INSERT INTO job_description 
+        (JobRefNumber, JobTitle, JobSummary, KeyResponsibilities, RequiredSkills)
+        VALUES
+        ('J1234', 'Web Developer', 'Create websites', 'Design pages', 'HTML, CSS, JS');
+      </p> 
+      <h2>Displaying all the added jobs listed</h2>
+      <pre>
+      <?php
+      echo htmlspecialchars('
+      $conn = mysqli_connect($host, $user, $pwd, $sql_db);
+      $query = "SELECT * FROM job_description";
+      $result = mysqli_query($conn, $query);
+
+      if ($result && mysqli_num_rows($result) != 0) {
+        while ($row = mysqli_fetch_assoc($result)) {
+          echo "<section class=\'job\'>";
+          echo "<h2>" . htmlspecialchars($row["JobTitle"]) . " (" . htmlspecialchars($row["JobRefNumber"]) . ")</h2>";
+          echo "<p><strong>Summary:</strong> " . htmlspecialchars($row["JobSummary"]) . "</p>";
+          echo "<p><strong>Responsibilities:</strong> " . htmlspecialchars($row["KeyResponsibilities"]) . "</p>";
+          echo "<p><strong>Skills Required:</strong> " . htmlspecialchars($row["RequiredSkills"]) . "</p>";
+          echo "<a href=\'apply.php?jobref=" . urlencode($row["JobRefNumber"]) . "\'>Apply Now</a>";
+          echo "</section>";
+        }
+      }
+      mysqli_close($conn);
+      ');
+      ?>
+      </pre>
+
+
+    </section>
     
 <?php include ("footer.inc"); ?>
 
